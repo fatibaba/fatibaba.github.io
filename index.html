@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="files/cv.pdf">CV</a></li>
@@ -220,16 +220,31 @@
     <!-- Contact Section -->
     <section id="contact" class="home-section">
         <div class="container">
-            <h1>Contact</h1>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>LinkedIn: <a href="//linkedin.com/in/yourprofile">Your LinkedIn</a></p>
+            <h1 class="section-heading">Contact</h1>
+            <p>Have questions or want to work together? Fill out the form below, and I’ll get back to you as soon as possible.</p>
+            
+            <form action="https://formspree.io/f/your_form_id" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="_replyto" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2024 Your Name. Built with GitHub Pages.</p>
+            <p>&copy; 2024 Fatima Sabiu Maikore. Built with GitHub Pages.</p>
         </div>
     </footer>
 
