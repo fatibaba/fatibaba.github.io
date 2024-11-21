@@ -20,6 +20,7 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
+            <img src="assets/images/profile.jpg" alt="Your Photo" style="width: 150px; border-radius: 50%;">
             <p>Experienced developer with expertise in ontology, semantic web technologies, and software solutions.</p>
         </section>
         <section id="skills">
@@ -37,7 +38,11 @@
         </section>
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>Email: fatibaba@gmail.com</p>
+            <form action="https://formsubmit.co/fatibaba@gmail.com" method="POST">
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 </body>
