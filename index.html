@@ -1,49 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freelance Software & Ontology Developer">
+    <meta name="theme-color" content="#0095eb">
     <title>Your Name - Freelance Developer</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto+Mono">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Freelance Software & Ontology Developer</p>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+<body id="top">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#top">Your Name</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="files/cv.pdf">CV</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="assets/images/profile.jpg" alt="Your Photo" style="width: 150px; border-radius: 50%;">
-            <p>Experienced developer with expertise in ontology, semantic web technologies, and software solutions.</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Semantic Web Technologies (RDF, OWL, SHACL)</li>
-                <li>Programming: Python, JavaScript, Node.js</li>
-                <li>Frontend Development: React, Material-UI</li>
-                <li>Backend Development: MongoDB, Express</li>
-            </ul>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Details about your notable projects go here.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="https://formsubmit.co/fatibaba@gmail.com" method="POST">
-                <input type="email" name="email" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+
+    <!-- Hero Section -->
+    <header class="hero-overlay" style="background-image: url('assets/images/hero-bg.jpg');">
+        <div class="section-heading center-text">
+            <h1>Your Name</h1>
+            <p>Freelance Software & Ontology Developer</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div id="profile">
+                        <div class="portrait" style="background-image: url('assets/images/profile.jpg');"></div>
+                        <div class="portrait-title">
+                            <h2>Your Name</h2>
+                            <h3>Software & Ontology Specialist</h3>
+                        </div>
+                        <ul class="network-icon">
+                            <li><a href="mailto:your.email@example.com"><i class="fa fa-envelope big-icon"></i></a></li>
+                            <li><a href="//linkedin.com/in/yourprofile"><i class="fa fa-linkedin big-icon"></i></a></li>
+                            <li><a href="//github.com/yourusername"><i class="fa fa-github big-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                    <h1>Biography</h1>
+                    <p>Provide a detailed biography about your skills, experience, and education here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="home-section">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="card">
+                        <a href="#" class="card-image hover-overlay"><img src="assets/images/project1.jpg" alt="Project 1"></a>
+                        <div class="card-text">
+                            <h4>Project Title 1</h4>
+                            <p>Short description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="card">
+                        <a href="#" class="card-image hover-overlay"><img src="assets/images/project2.jpg" alt="Project 2"></a>
+                        <div class="card-text">
+                            <h4>Project Title 2</h4>
+                            <p>Short description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="home-section">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="//linkedin.com/in/yourprofile">Your LinkedIn</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Your Name. Built with GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
