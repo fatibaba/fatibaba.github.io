@@ -1647,36 +1647,3 @@ span.source {
   margin-top: -40px;
   margin-bottom: 30px;
 }
-/* Flexbox card container */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* Ensure all service cards are the same height */
-.service-card {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1;
-}
-
-/* Card content alignment */
-.service-card h3 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.service-card p {
-  margin-bottom: 0;
-}
-
-/* Icons styling */
-.service-card i {
-  margin-bottom: 15px;
-}
