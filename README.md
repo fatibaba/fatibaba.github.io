@@ -16,10 +16,10 @@ I’m driven by innovation and a dedication to knowledge sharing. Whether it’s
 - Professional Training
 
 ## Projects
-- **TURBBO**: Tools for understanding relationships between behaviours using ontologies [GitHub repo](https://github.com/fatibaba/turbbo)
-- **ELECTRICA**: ELEctronic knowledge base for Clinicians, Trainers and Researchers in Child Abuse [GitHub repo] (https://github.com/fatibaba/electrica)
-- **BR:UK**: The DEMO - INTER Project [website](https://osf.io/5e7j9/)
+- **TURBBO**: Tools for understanding relationships between behaviours using ontologies [GitHub repo](https://github.com/fatibaba/turbbo){:target="_blank"}
+- **ELECTRICA**: ELEctronic knowledge base for Clinicians, Trainers and Researchers in Child Abuse [GitHub repo](https://github.com/fatibaba/electrica){:target="_blank"}
+- **BR-UK**: The DEMO - INTER Project [website](https://osf.io/5e7j9/){:target="_blank"}
 
 
 ## Contact
-Have questions or want to work together? [Contact me here](https://fatibaba.github.io/#contact)
+Have questions or want to work together? [Contact me here](https://fatibaba.github.io/#contact){:target="_blank"}
