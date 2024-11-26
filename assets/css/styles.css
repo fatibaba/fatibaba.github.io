@@ -1647,3 +1647,30 @@ span.source {
   margin-top: -40px;
   margin-bottom: 30px;
 }
+
+.accordion-button {
+  background-color: #0095eb;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0077cc;
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-header {
+  margin-bottom: 5px;
+}
