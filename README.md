@@ -16,6 +16,7 @@ I’m driven by innovation and a dedication to knowledge sharing. Whether it’s
 - Professional Training
 
 ## Projects
+- **OCL-SOP**: Ontology for Clinical Laboratory Standard Operating Procedures [] 
 - **TURBBO**: Tools for understanding relationships between behaviours using ontologies [GitHub repo](https://github.com/fatibaba/turbbo)
 - **ELECTRICA**: ELEctronic knowledge base for Clinicians, Trainers and Researchers in Child Abuse [GitHub repo](https://github.com/fatibaba/electrica)
 - **BR-UK**: The DEMO - INTER Project [website](https://osf.io/5e7j9/)
