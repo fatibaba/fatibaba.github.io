@@ -1,87 +1,185 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Freelance Software & Ontology Developer">
-    <meta name="theme-color" content="#0095eb">
-    <title>Fatima Sabiu Maikore - Tech Consultant and Education Specialist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Freelance Software & Ontology Developer">
+  <meta name="theme-color" content="#0095eb">
+  <title>Fatima Sabiu Maikore - Tech Consultant and Education Specialist</title>
 
-    <!-- External Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto+Mono">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto+Mono">
 
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Inline Custom Styles for the Projects Section -->
+  <style>
+    /* Card styling */
+    .card {
+      border: 1px solid #e3e3e3;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+      background-color: #fff;
+    }
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .card-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card-text {
+      padding: 15px;
+    }
+    .card-text h4 {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .card-text p {
+      margin-bottom: 15px;
+    }
+    .card-text .btn {
+      text-decoration: none;
+    }
+    /* Projects Section */
+    #projects {
+      padding: 60px 0;
+      background-color: #f9f9f9;
+    }
+    #projects h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 36px;
+    }
+  </style>
 </head>
 <body id="top">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index#top">Fatima Sabiu Maikore</a>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index#top">Fatima Sabiu Maikore</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index#about">About</a></li>
+          <li><a href="index#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="index#contact">Contact</a></li>
+          <li><a href="FatimaCV2024.pdf" target="_blank" rel="noopener">CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section id="projects" class="home-section">
+    <div class="container">
+      <h1>Projects</h1>
+      <div class="row">
+        <!-- ELECTRICA -->
+        <div class="col-xs-12 col-sm-6">
+          <div class="card">
+            <div class="card-image">
+              <a href="https://github.com/yourusername/electrica" target="_blank" rel="noopener">
+                <img src="https://via.placeholder.com/600x400?text=ELECTRICA" alt="ELECTRICA">
+              </a>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index#about">About</a></li>
-                    <li><a href="index#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="index#contact">Contact</a></li>
-                    <li><a href="FatimaCV2024.pdf" target="_blank" rel="noopener">CV</a></li>
-                </ul>
+            <div class="card-text">
+              <h4><i class="fa fa-github"></i> ELECTRICA</h4>
+              <p>ELEctronic knowledge base for Clinicians, Trainers and Researchers in Child Abuse.</p>
+              <a href="https://github.com/yourusername/electrica" target="_blank" rel="noopener" class="btn btn-primary">
+                <i class="fa fa-github"></i> View on GitHub
+              </a>
             </div>
+          </div>
         </div>
-    </nav>
-    <!-- Projects Section -->
-    <section id="projects" class="home-section">
-        <div class="container">
-            <h1>Projects</h1>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="card">
-                        <a href="#" class="card-image hover-overlay"><img src="assets/images/project1.jpg" alt="Project 1"></a>
-                        <div class="card-text">
-                            <h4>Project Title 1</h4>
-                            <p>Short description of the project.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="card">
-                        <a href="#" class="card-image hover-overlay"><img src="assets/images/project2.jpg" alt="Project 2"></a>
-                        <div class="card-text">
-                            <h4>Project Title 2</h4>
-                            <p>Short description of the project.</p>
-                        </div>
-                    </div>
-                </div>
+
+        <!-- TURBBO -->
+        <div class="col-xs-12 col-sm-6">
+          <div class="card">
+            <div class="card-image">
+              <a href="https://github.com/yourusername/turbbo" target="_blank" rel="noopener">
+                <img src="https://via.placeholder.com/600x400?text=TURBBO" alt="TURBBO">
+              </a>
             </div>
+            <div class="card-text">
+              <h4><i class="fa fa-github"></i> TURBBO</h4>
+              <p>Tools for understanding relationships between behaviours using ontologies.</p>
+              <a href="https://github.com/yourusername/turbbo" target="_blank" rel="noopener" class="btn btn-primary">
+                <i class="fa fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
         </div>
-    </section>
 
-
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2024 Fatima Sabiu Maikore. Built with GitHub Pages.</p>
+        <!-- BR-UK -->
+        <div class="col-xs-12 col-sm-6">
+          <div class="card">
+            <div class="card-image">
+              <a href="https://br-uk-demo.example.com" target="_blank" rel="noopener">
+                <img src="https://via.placeholder.com/600x400?text=BR-UK" alt="BR-UK">
+              </a>
+            </div>
+            <div class="card-text">
+              <h4><i class="fa fa-globe"></i> BR-UK</h4>
+              <p>The DEMO - INTER Project website.</p>
+              <a href="https://br-uk-demo.example.com" target="_blank" rel="noopener" class="btn btn-primary">
+                <i class="fa fa-external-link"></i> Visit Website
+              </a>
+            </div>
+          </div>
         </div>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- OCL-SOP -->
+        <div class="col-xs-12 col-sm-6">
+          <div class="card">
+            <div class="card-image">
+              <a href="https://github.com/yourusername/ocl-sop" target="_blank" rel="noopener">
+                <img src="https://via.placeholder.com/600x400?text=OCL-SOP" alt="OCL-SOP">
+              </a>
+            </div>
+            <div class="card-text">
+              <h4><i class="fa fa-github"></i> OCL-SOP</h4>
+              <p>Ontology for Clinical Laboratory Standard Operating Procedures.</p>
+              <a href="https://github.com/yourusername/ocl-sop" target="_blank" rel="noopener" class="btn btn-primary">
+                <i class="fa fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 Fatima Sabiu Maikore. Built with GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
