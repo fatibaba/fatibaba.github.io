@@ -18,7 +18,7 @@ I’m driven by innovation and a dedication to knowledge sharing. Whether it’s
 ## Projects
 - **ELECTRICA**: ELEctronic knowledge base for Clinicians, Trainers and Researchers in Child Abuse [GitHub repo](https://github.com/fatibaba/electrica)
 - **TURBBO**: Tools for understanding relationships between behaviours using ontologies [GitHub repo](https://github.com/fatibaba/turbbo)
-- **BR-UK**: The DEMO - INTER Project [website](https://osf.io/5e7j9/)
+- **BR-UK**: The DEMO - INTER Project [website](https://osf.io/rgy2w/)
 - **OCL-SOP**: Ontology for Clinical Laboratory Standard Operating Procedures [GitHub repo](https://github.com/fatibaba/EXACT-med) 
 
 
