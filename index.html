@@ -1,302 +1,1220 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tech Consultant and Education Specialist">
-    <meta name="theme-color" content="#0095eb">
-    <title>Fatima Sabiu Maikore - Tech Consultant and Education Specialist</title>
+    <meta name="description" content="Fatima Sabiu Maikore is a Data and Ontology Specialist delivering healthcare systems, semantic technologies, data architecture, and reporting solutions.">
+    <meta name="theme-color" content="#14324a">
+    <title>Fatima Sabiu Maikore | Data &amp; Ontology Specialist</title>
 
-    <!-- External Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Manrope:wght@400;500;700;800&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
 
-   
+    <style>
+        :root {
+            --bg: #f6efe6;
+            --bg-alt: #fffaf4;
+            --surface: rgba(255, 255, 255, 0.76);
+            --surface-strong: #ffffff;
+            --ink: #163047;
+            --muted: #5f6e7b;
+            --accent: #0f8b8d;
+            --accent-dark: #0a6768;
+            --accent-soft: rgba(15, 139, 141, 0.12);
+            --warm: #e98d48;
+            --line: rgba(22, 48, 71, 0.12);
+            --shadow: 0 24px 60px rgba(18, 42, 61, 0.12);
+            --radius: 24px;
+            --radius-sm: 18px;
+            --nav-height: 84px;
+            --container: 1160px;
+        }
 
+        * {
+            box-sizing: border-box;
+        }
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto+Mono">
+        html {
+            scroll-behavior: smooth;
+        }
 
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+        body {
+            margin: 0;
+            font-family: "Manrope", sans-serif;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at top left, rgba(233, 141, 72, 0.18), transparent 30%),
+                radial-gradient(circle at 85% 10%, rgba(15, 139, 141, 0.16), transparent 25%),
+                linear-gradient(180deg, #f7efe6 0%, #fbf7f1 42%, #f4fbfb 100%);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        textarea {
+            font: inherit;
+        }
+
+        .container {
+            width: min(calc(100% - 2rem), var(--container));
+            margin: 0 auto;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(14px);
+            background: rgba(251, 247, 241, 0.82);
+            border-bottom: 1px solid rgba(22, 48, 71, 0.08);
+        }
+
+        .nav-shell {
+            min-height: var(--nav-height);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .brand {
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+
+        .brand span {
+            display: block;
+            font-size: 0.84rem;
+            font-weight: 600;
+            color: var(--muted);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-top: 0.15rem;
+        }
+
+        .nav-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.78);
+            color: var(--ink);
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links a {
+            padding: 0.75rem 1rem;
+            border-radius: 999px;
+            color: var(--muted);
+            font-weight: 700;
+            transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            color: var(--ink);
+            background: rgba(255, 255, 255, 0.88);
+            transform: translateY(-1px);
+        }
+
+        .nav-links .button-link {
+            color: #fff;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+            box-shadow: 0 12px 24px rgba(15, 139, 141, 0.18);
+        }
+
+        .nav-links .button-link:hover,
+        .nav-links .button-link:focus-visible {
+            color: #fff;
+            background: linear-gradient(135deg, var(--accent-dark) 0%, #084f50 100%);
+        }
+
+        section {
+            scroll-margin-top: calc(var(--nav-height) + 20px);
+        }
+
+        .hero {
+            padding: 4.5rem 0 3.5rem;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.95fr);
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0 0 1.1rem;
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent-dark);
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 28px;
+            height: 2px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--accent), var(--warm));
+        }
+
+        .hero-copy,
+        .profile-card {
+            animation: rise 0.8s ease both;
+        }
+
+        .profile-card {
+            animation-delay: 0.12s;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            line-height: 1.06;
+            letter-spacing: -0.04em;
+        }
+
+        h1,
+        h2 {
+            font-family: "Fraunces", serif;
+        }
+
+        h1 {
+            font-size: clamp(2.9rem, 4vw, 4.75rem);
+            max-width: 12ch;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 3vw, 3rem);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            letter-spacing: -0.03em;
+        }
+
+        p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.75;
+            font-size: 1.02rem;
+        }
+
+        .lead {
+            margin-top: 1.4rem;
+            max-width: 62ch;
+            font-size: 1.1rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+            margin-top: 1.8rem;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.55rem;
+            min-height: 52px;
+            padding: 0 1.2rem;
+            border: 0;
+            border-radius: 999px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        }
+
+        .button:hover,
+        .button:focus-visible {
+            transform: translateY(-2px);
+        }
+
+        .button-primary {
+            color: #fff;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+            box-shadow: 0 18px 32px rgba(15, 139, 141, 0.18);
+        }
+
+        .button-secondary {
+            color: var(--ink);
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid rgba(22, 48, 71, 0.12);
+        }
+
+        .stat-grid {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0 0;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-grid li {
+            padding: 1.1rem 1.15rem;
+            border: 1px solid rgba(22, 48, 71, 0.08);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 14px 34px rgba(22, 48, 71, 0.06);
+        }
+
+        .stat-grid strong {
+            display: block;
+            font-size: 1.45rem;
+            line-height: 1.1;
+            margin-bottom: 0.35rem;
+            color: var(--ink);
+        }
+
+        .profile-card {
+            position: relative;
+            padding: 1.35rem;
+            border: 1px solid rgba(22, 48, 71, 0.1);
+            border-radius: 28px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.72) 100%);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .profile-card::after {
+            content: "";
+            position: absolute;
+            inset: auto -60px -90px auto;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(15, 139, 141, 0.14), transparent 65%);
+        }
+
+        .portrait-frame {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            aspect-ratio: 4 / 4.8;
+            margin-bottom: 1.2rem;
+        }
+
+        .portrait-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portrait-badge {
+            position: absolute;
+            left: 1rem;
+            bottom: 1rem;
+            padding: 0.6rem 0.8rem;
+            border-radius: 16px;
+            background: rgba(22, 48, 71, 0.78);
+            color: #fff;
+            backdrop-filter: blur(10px);
+        }
+
+        .portrait-badge strong,
+        .portrait-badge span {
+            display: block;
+        }
+
+        .portrait-badge strong {
+            font-size: 0.92rem;
+        }
+
+        .portrait-badge span {
+            margin-top: 0.2rem;
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .profile-title {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            align-items: end;
+        }
+
+        .profile-title p {
+            margin-top: 0.35rem;
+        }
+
+        .availability {
+            padding: 0.55rem 0.8rem;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent-dark);
+            font-size: 0.9rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .profile-points {
+            list-style: none;
+            padding: 0;
+            margin: 1.2rem 0 1.4rem;
+            display: grid;
+            gap: 0.9rem;
+        }
+
+        .profile-points li {
+            position: relative;
+            padding-left: 1.3rem;
+        }
+
+        .profile-points li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.74rem;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--warm));
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .social-links a {
+            width: 46px;
+            height: 46px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+            color: var(--ink);
+            background: rgba(255, 255, 255, 0.86);
+            border: 1px solid rgba(22, 48, 71, 0.1);
+            transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .social-links a:hover,
+        .social-links a:focus-visible {
+            transform: translateY(-2px);
+            color: var(--accent-dark);
+            border-color: rgba(15, 139, 141, 0.35);
+        }
+
+        .section {
+            padding: 2.5rem 0 0;
+        }
+
+        .section-head {
+            max-width: 720px;
+            margin-bottom: 1.8rem;
+        }
+
+        .section-head p {
+            margin-top: 0.95rem;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        .panel {
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            border: 1px solid rgba(22, 48, 71, 0.08);
+            background: rgba(255, 255, 255, 0.68);
+            box-shadow: 0 14px 34px rgba(22, 48, 71, 0.05);
+        }
+
+        .panel-stack {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .expertise-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .expertise-cloud span {
+            padding: 0.75rem 0.95rem;
+            border-radius: 999px;
+            border: 1px solid rgba(15, 139, 141, 0.18);
+            background: rgba(15, 139, 141, 0.08);
+            color: var(--accent-dark);
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .services-grid,
+        .projects-grid,
+        .credentials-grid,
+        .contact-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .services-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .service-card,
+        .project-card,
+        .credential-card,
+        .contact-card,
+        .form-card {
+            padding: 1.45rem;
+            border-radius: var(--radius);
+            border: 1px solid rgba(22, 48, 71, 0.08);
+            background: rgba(255, 255, 255, 0.74);
+            box-shadow: 0 14px 34px rgba(22, 48, 71, 0.05);
+        }
+
+        .service-card {
+            min-height: 100%;
+        }
+
+        .service-icon,
+        .project-tag {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+        }
+
+        .service-icon {
+            width: 54px;
+            height: 54px;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            color: var(--accent-dark);
+            background: linear-gradient(135deg, rgba(15, 139, 141, 0.15), rgba(233, 141, 72, 0.14));
+        }
+
+        .service-card p,
+        .project-card p,
+        .credential-card p,
+        .contact-card p,
+        .form-card p {
+            margin-top: 0.85rem;
+        }
+
+        .projects-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .project-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::after {
+            content: "";
+            position: absolute;
+            inset: auto -40px -80px auto;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(15, 139, 141, 0.12), transparent 68%);
+        }
+
+        .project-tag {
+            padding: 0.45rem 0.7rem;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--accent-dark);
+            background: rgba(15, 139, 141, 0.1);
+            margin-bottom: 0.9rem;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-weight: 800;
+            color: var(--accent-dark);
+        }
+
+        .credentials-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .credential-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.1rem 0 0;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .credential-list li {
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(22, 48, 71, 0.08);
+        }
+
+        .credential-list li:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        .credential-list strong,
+        .credential-list span {
+            display: block;
+        }
+
+        .credential-list strong {
+            color: var(--ink);
+        }
+
+        .credential-list span {
+            margin-top: 0.2rem;
+            color: var(--muted);
+        }
+
+        .contact-grid {
+            grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+            align-items: start;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.25rem 0 0;
+            display: grid;
+            gap: 0.85rem;
+        }
+
+        .contact-list a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--ink);
+            font-weight: 700;
+        }
+
+        .contact-list i {
+            width: 1.2rem;
+            color: var(--accent-dark);
+        }
+
+        .form-row {
+            display: grid;
+            gap: 0.4rem;
+            margin-top: 1rem;
+        }
+
+        .form-row label {
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        .form-row input,
+        .form-row textarea {
+            width: 100%;
+            padding: 0.95rem 1rem;
+            border: 1px solid rgba(22, 48, 71, 0.12);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.94);
+            color: var(--ink);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .form-row input:focus,
+        .form-row textarea:focus {
+            outline: none;
+            border-color: rgba(15, 139, 141, 0.5);
+            box-shadow: 0 0 0 4px rgba(15, 139, 141, 0.12);
+        }
+
+        .form-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+            align-items: center;
+            margin-top: 1.25rem;
+        }
+
+        .form-status {
+            min-height: 1.5rem;
+            color: var(--accent-dark);
+            font-weight: 700;
+        }
+
+        .site-footer {
+            padding: 2.5rem 0 3rem;
+        }
+
+        .footer-shell {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            align-items: center;
+            padding-top: 1.4rem;
+            border-top: 1px solid rgba(22, 48, 71, 0.1);
+        }
+
+        .footer-shell p {
+            font-size: 0.95rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 980px) {
+            .hero-grid,
+            .about-grid,
+            .contact-grid,
+            .credentials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid,
+            .projects-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .nav-toggle {
+                display: inline-flex;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: calc(100% + 0.6rem);
+                left: 1rem;
+                right: 1rem;
+                display: none;
+                flex-direction: column;
+                align-items: stretch;
+                padding: 0.75rem;
+                border-radius: 22px;
+                border: 1px solid rgba(22, 48, 71, 0.08);
+                background: rgba(255, 255, 255, 0.94);
+                box-shadow: 0 18px 44px rgba(22, 48, 71, 0.12);
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links a {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-shell {
+                position: relative;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .hero {
+                padding-top: 3.3rem;
+            }
+
+            h1 {
+                max-width: none;
+            }
+
+            .stat-grid,
+            .services-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-shell,
+            .hero-actions,
+            .form-actions {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
 </head>
 <body id="top">
+    <header class="site-header">
+        <div class="container nav-shell">
+            <a class="brand" href="#top">
+                Fatima Sabiu Maikore
+                <span>Data &amp; Ontology Specialist</span>
+            </a>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#top">Fatima Sabiu Maikore</a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="Curriculum_Vitae.pdf" target="_blank" rel="noopener">CV</a></li>
-                </ul>
-            </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-links" id="site-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a class="button-link" href="cv-llt.pdf" target="_blank" rel="noopener">View CV</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-
-    <!-- About Section -->
-    <section id="about" class="home-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <div id="profile">
-                        <div class="portrait" style="background-image: url('assets/images/profile.jpg');"></div>
-                        <div class="portrait-title">
-                            <h2>Fatima Sabiu Maikore</h2>
-                            <h3>Innovative Technology Consultant & Academic Expert</h3>
-                        </div>
-                        <ul class="network-icon">
-                            <li><a href="mailto:fatibaba@gmail.com" target="_blank" rel="noopener"><i class="fa fa-envelope big-icon"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/fatima-sabiu-maikore-b3990b35/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin big-icon"></i></a></li>
-                            <li><a href="https://github.com/fatibaba" target="_blank" rel="noopener"><i class="fa-brands fa-github big-icon"></i></a></li>
-                            <li><a href="https://scholar.google.com/citations?user=A96vua8AAAAJ&hl=en&authuser=2" target="_blank" rel="noopener"><i class="ai ai-google-scholar big-icon"></i></a></li>
-                            <li><a href="https://orcid.org/0000-0001-8294-5283" target="_blank" rel="noopener"><i class="ai ai-orcid big-icon"></i></a></li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-8">
-                    <h1>About me</h1>
-                    <p>
-                        I am an <strong>Innovative Technology Consultant</strong> and <strong>Academic Expert</strong> with a PhD in Computer Science and over a decade of experience in IT consulting, research, and education. 
-                        Specializing in areas like <strong>semantic web technologies</strong>, <strong>AI-driven solutions</strong>, and <strong>web application development</strong>, I deliver cutting-edge strategies and tools to help businesses and organizations thrive in the digital era.
+    <main>
+        <section class="hero" id="about">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Healthcare systems, semantics, and practical data design</p>
+                    <h1>Data infrastructure that makes complex work easier to run.</h1>
+                    <p class="lead">
+                        I design data systems, ontologies, and reporting tools for healthcare, research, and enterprise settings. My work combines data modelling, semantic technologies, governance, and delivery so teams can move from unclear requirements to systems that are structured, interoperable, and usable in practice.
                     </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="projects">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Explore Projects
+                        </a>
+                        <a class="button button-secondary" href="cv-llt.pdf" target="_blank" rel="noopener">
+                            <i class="fa-regular fa-file-lines"></i>
+                            Download CV
+                        </a>
+                    </div>
+
+                    <ul class="stat-grid" aria-label="Selected highlights">
+                        <li>
+                            <strong>10+ years</strong>
+                            <span class="muted">designing and delivering data systems across healthcare, research, and education</span>
+                        </li>
+                        <li>
+                            <strong>450+ users</strong>
+                            <span class="muted">supported through EMR operations in high-pressure healthcare deployment</span>
+                        </li>
+                        <li>
+                            <strong>Ontology + standards</strong>
+                            <span class="muted">from clinical interoperability projects to IEEE semantic representation work</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <aside class="profile-card" aria-label="Profile summary">
+                    <div class="portrait-frame">
+                        <img src="photo.jpeg" alt="Portrait of Fatima Sabiu Maikore">
+                        <div class="portrait-badge">
+                            <strong>Current focus</strong>
+                            <span>Healthcare data systems and semantic integration</span>
+                        </div>
+                    </div>
+
+                    <div class="profile-title">
+                        <div>
+                            <h2>Fatima Sabiu Maikore</h2>
+                            <p>Data &amp; Ontology Specialist</p>
+                        </div>
+                        <span class="availability">Available for consulting</span>
+                    </div>
+
+                    <ul class="profile-points">
+                        <li>Lead developer for a production electronic medical records system supporting hospital operations.</li>
+                        <li>Built ontology-driven tools for semantic integration, knowledge representation, and standards alignment.</li>
+                        <li>Teaching and research background spanning databases, semantic web, and software engineering.</li>
+                    </ul>
+
+                    <div class="social-links">
+                        <a href="mailto:fatibaba@gmail.com" aria-label="Email Fatima"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/fatima-sabiu-maikore-b3990b35/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/fatibaba" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?user=A96vua8AAAAJ&amp;hl=en&amp;authuser=2" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                        <a href="https://orcid.org/0000-0001-8294-5283" target="_blank" rel="noopener" aria-label="ORCID"><i class="ai ai-orcid"></i></a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">About</p>
+                    <h2>A technical profile grounded in delivery.</h2>
                     <p>
-                        Driven by a passion for innovation and collaboration, I focus on solving complex challenges, enhancing efficiency, and creating impactful solutions. 
-                        Whether it’s streamlining processes, mentoring future leaders, or developing transformative technologies, I empower clients to unlock the full potential of technology and achieve their strategic goals.
-                         </p>          
-                    
-                    <h3>Education</h3>
-                          <ul class="ul-edu fa-ul">
-                            
-                            <li>
-                                <i class="fa-li fa fa-graduation-cap"></i>
-                                <div class="description">
-                                  <p class="course">PhD in Computer Science, 2020</p>
-                                  <p class="institution">Goldsmiths, University of London</p>
-                                </div>
-                              </li>
+                        This site is designed to show the shape of my work rather than mirror my CV. I focus on data architectures, ontologies, governance, and reporting solutions that can support real workflows, especially in healthcare and research environments where clarity, traceability, and interoperability matter.
+                    </p>
+                </div>
 
+                <div class="about-grid">
+                    <div class="panel panel-stack">
+                        <p>
+                            My background spans production healthcare systems, ontology engineering, research-led semantic tooling, and teaching in computing. I work comfortably from requirements analysis through schema design, validation rules, documentation, dashboards, and technical delivery.
+                        </p>
+                        <p>
+                            That combination is useful when a project needs both deep structure and practical execution: data that is well modelled, systems that are maintainable, and outputs that support decisions rather than just storing information.
+                        </p>
+                    </div>
+
+                    <div class="panel">
+                        <div class="expertise-cloud" aria-label="Core expertise">
+                            <span>Data Modelling &amp; Architecture</span>
+                            <span>Ontology Engineering</span>
+                            <span>Semantic Integration</span>
+                            <span>Data Governance</span>
+                            <span>Validation Rules</span>
+                            <span>Healthcare Systems</span>
+                            <span>Analytics &amp; Dashboards</span>
+                            <span>Technical Advisory</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Services</p>
+                    <h2>Where I can add value.</h2>
+                    <p>
+                        My services are centered on the work I do best: structuring complex information, building usable systems around it, and helping organisations make the most of their data.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                        <h3>Data Modelling &amp; Architecture</h3>
+                        <p>Schema design for relational and NoSQL systems, multi-module architecture planning, and structured data foundations for production software.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                        <h3>Ontology Engineering &amp; Semantic Integration</h3>
+                        <p>Designing ontologies, aligning vocabularies, and creating semantic models that improve interoperability, reuse, and knowledge representation.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                        <h3>Healthcare Systems &amp; EMR Design</h3>
+                        <p>Supporting clinical and administrative workflows through well-structured electronic medical record systems, validation rules, and reporting layers.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-list-check"></i></div>
+                        <h3>Data Governance &amp; Standards</h3>
+                        <p>Data dictionaries, naming conventions, validation logic, and schema documentation that improve consistency and reduce downstream ambiguity.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Dashboards &amp; Reporting</h3>
+                        <p>Operational dashboards and reporting workflows that turn data into decision support for monitoring, public health reporting, and management insight.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h3>Teaching, Training &amp; Technical Advisory</h3>
+                        <p>Workshops, curriculum support, guest teaching, and technical consultation in databases, semantic web, software engineering, and inclusive computing.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Selected Work</p>
+                    <h2>Projects that show the range of the work.</h2>
+                    <p>
+                        A few representative examples from healthcare, behavioural science, and standards-focused semantic work. The projects page can hold the longer project narratives.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <span class="project-tag">Healthcare Systems</span>
+                        <h3>Electronic Medical Records Platform</h3>
+                        <p>Designed and implemented a production EMR platform covering patient management, consultations, laboratory, pharmacy, billing, and inpatient and outpatient workflows.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-tag">Semantic AI</span>
+                        <h3>LLM Ontology Alignment Tool</h3>
+                        <p>Developed a tool for uploading, analysing, and exporting ontology matches, supporting scalable semantic integration across domains.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-tag">Clinical Ontology</span>
+                        <h3>ELECTRICA Ontology</h3>
+                        <p>Designed a clinical ontology integrating SNOMED CT, ICD, and BFO, then published it through NCBO BioPortal to support interoperability and reuse.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-tag">Behavioural Science</span>
+                        <h3>TURRBO and RBBO</h3>
+                        <p>Created ontology-driven tools and supporting infrastructure for behavioural science, including semantic integration, cross-domain reasoning, and scalable remote access.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-tag">Standards</span>
+                        <h3>IEEE 1872.1 Representation Work</h3>
+                        <p>Contributed an OWL ontology for robot task representation as part of an international working group focused on interoperability and semantic alignment.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-tag">More Detail</span>
+                        <h3>Project Narratives and Context</h3>
+                        <p>Use the projects page for deeper write-ups, screenshots, outcomes, and technical detail without overloading the homepage.</p>
+                        <a class="project-link" href="projects">
+                            Visit projects page
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Credentials</p>
+                    <h2>Education and professional standing.</h2>
+                </div>
+
+                <div class="credentials-grid">
+                    <article class="credential-card">
+                        <h3>Education</h3>
+                        <ul class="credential-list">
                             <li>
-                              <i class="fa-li fa fa-graduation-cap"></i>
-                              <div class="description">
-                                <p class="course">MSc in Information Systems: Business IT, 2010</p>
-                                <p class="institution">The University of Manchester</p>
-                              </div>
+                                <strong>PhD in Computer Science</strong>
+                                <span>Goldsmiths, University of London, 2020</span>
                             </li>
-                            
                             <li>
-                              <i class="fa-li fa fa-graduation-cap"></i>
-                              <div class="description">
-                                <p class="course">BSc in Information Systems, 2009</p>
-                                <p class="institution">American University of Nigeria</p>
-                              </div>
+                                <strong>MSc in Information Systems: Business IT</strong>
+                                <span>The University of Manchester, 2010</span>
                             </li>
-                            
-                          </ul>              
-                    
-                          <h3>Professional Membership</h3>
-                          <ul class="ul-interests">
-                            <li>Fellow of the Higher Education Academy (FHEA)</li>
-                            <li>Member of the Institute of Electrical and Electronics Engineers (IEEE)</li>
-                            <li>Member of the Association for Computing Machinery (ACM)</li>
-                            <li>Google Women Techmakers Ambassador</li>
-                            <li>Member of the Organization for Women in Science for the Developing World (OWSD)</li>
-                          </ul>
-                        
-                          
+                            <li>
+                                <strong>BSc in Information Systems</strong>
+                                <span>American University of Nigeria, 2009</span>
+                            </li>
+                        </ul>
+                    </article>
 
+                    <article class="credential-card">
+                        <h3>Professional Memberships</h3>
+                        <ul class="credential-list">
+                            <li>
+                                <strong>Fellow of the Higher Education Academy</strong>
+                                <span>FHEA</span>
+                            </li>
+                            <li>
+                                <strong>Institute of Electrical and Electronics Engineers</strong>
+                                <span>IEEE member and Robot Task Representation Working Group participant</span>
+                            </li>
+                            <li>
+                                <strong>Association for Computing Machinery</strong>
+                                <span>ACM member</span>
+                            </li>
+                            <li>
+                                <strong>Google Women Techmakers Ambassador</strong>
+                                <span>Community and inclusion advocacy</span>
+                            </li>
+                            <li>
+                                <strong>Organization for Women in Science for the Developing World</strong>
+                                <span>OWSD member</span>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="services" class="home-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1 class="section-heading center-text">Services</h1>
-                    <p class="center-text">Explore the range of professional services I offer to individuals, businesses, and organizations.</p>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Start with the problem you are trying to solve.</h2>
+                    <p>
+                        I am open to consulting, collaboration, teaching, and advisory work related to healthcare systems, ontologies, data design, semantic technologies, and reporting workflows.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <article class="contact-card">
+                        <h3>Direct contact</h3>
+                        <p>If you already know the shape of the work, email is the fastest route. You can also connect through LinkedIn or review publications and profiles below.</p>
+
+                        <ul class="contact-list">
+                            <li><a href="mailto:fatibaba@gmail.com"><i class="fa-solid fa-envelope"></i> fatibaba@gmail.com</a></li>
+                            <li><a href="https://www.linkedin.com/in/fatima-sabiu-maikore-b3990b35/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://github.com/fatibaba" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                            <li><a href="https://scholar.google.com/citations?user=A96vua8AAAAJ&amp;hl=en&amp;authuser=2" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Google Scholar</a></li>
+                            <li><a href="https://orcid.org/0000-0001-8294-5283" target="_blank" rel="noopener"><i class="ai ai-orcid"></i> ORCID</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="form-card">
+                        <h3>Send a message</h3>
+                        <p>Use the form for project enquiries, collaborations, speaking invitations, or teaching-related discussions.</p>
+
+                        <form id="contact-form" action="https://formspree.io/f/xwpkqagr" method="POST">
+                            <div class="form-row">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="_replyto" placeholder="you@example.com" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell me a bit about the work or question." required></textarea>
+                            </div>
+
+                            <input type="hidden" name="_subject" value="New message from Fatima Sabiu Maikore website">
+
+                            <div class="form-actions">
+                                <button class="button button-primary" type="submit">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    Send Message
+                                </button>
+                                <p class="form-status" id="form-status" aria-live="polite"></p>
+                            </div>
+                        </form>
+                    </article>
                 </div>
             </div>
-            <div class="row space-below">
-                <!-- Service 1 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card-simple">
-                        <i class="fa fa-sitemap" style="font-size: 40px; color: #0095eb; margin-bottom: 15px;"></i>
-                        <h4 style="color: #0095eb;">Semantic Web & Ontology Development</h4>
-                        <p>Designing ontologies and implementing semantic web technologies to enhance data interoperability and knowledge representation.</p>
-                    </div>
-                </div>
+        </section>
+    </main>
 
-                <!-- Service 2 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card-simple">
-                        <i class="fa fa-cogs" style="font-size: 40px; color: #0095eb; margin-bottom: 15px;"></i>
-                        <h4 style="color: #0095eb;">Artificial Intelligence-driven Solutions</h4>
-                        <p>Developing intelligent systems by leveraging language models like LLaMA alongside ontologies to provide automation, decision-making, and insights.</p>
-                    </div>
-                </div>
-                <!-- Service 3 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card-simple">
-                        <i class="fa fa-university" style="font-size: 40px; color: #0095eb; margin-bottom: 15px;"></i>
-                        <h4 style="color: #0095eb;">Academic & Teaching Consulting</h4>
-                        <p>Offering support in STEM curriculum design, inclusive computing, and advanced teaching strategies for educational institutions.</p>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="row space-below">
-                <!-- Service 4 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card-simple">
-                        <i class="fas fa-chalkboard-teacher" style="font-size: 40px; color: #0095eb; margin-bottom: 15px;"></i>
-                        <h4 style="color: #0095eb;">Professional Training & Education</h4>
-                        <p>Providing tailored IT training for organizations and guest lecturing on advanced topics in computing to upskill teams.</p>
-                    </div>
-                </div>
-                <!-- Service 5 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card-simple">
-                        <i class="fa-solid fa-laptop-code" style="font-size: 40px; color: #0095eb; margin-bottom: 15px;"></i>
-                        <h4 style="color: #0095eb;">Web Application Design & Development</h4>
-                        <p>Creating responsive, user-friendly web applications with scalable backend solutions tailored to business needs.</p>
-                    </div>
-                </div>
-                <!-- Service 6 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card-simple">
-                        <i class="fa fa-database" style="font-size: 40px; color: #0095eb; margin-bottom: 15px;"></i>
-                        <h4 style="color: #0095eb;">Database Design & Management</h4>
-                        <p>Providing expertise in database design, implementation, and optimization to ensure integrity, scalability, and high performance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>    
-
-    <!-- Contact Section -->
-    <section id="contact" class="home-section">
-        <div class="container">
-            <h1 class="section-heading">Contact</h1>
-            <p>Have questions or want to work together? Fill out the form below, and I’ll get back to you as soon as possible.</p>
-            
-            <form id="contact-form" action="https://formspree.io/f/xwpkqagr" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="_replyto" class="form-control" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <input type="hidden" name="_subject" value="New message from your website!">
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Pop-Up Modal -->
-    <div id="thank-you-modal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); border-radius: 8px; z-index: 1000;">
-        <p>Thank you for contacting me! I will get back to you soon.</p>
-        <button onclick="closeModal()" class="btn btn-primary">Close</button>
-    </div>
-    <div id="modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
-
-    <!-- JavaScript -->
-    <script>
-        const form = document.getElementById('contact-form');
-        const modal = document.getElementById('thank-you-modal');
-        const overlay = document.getElementById('modal-overlay');
-
-        form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-
-            // Submit the form using Formspree
-            fetch(form.action, {
-                method: 'POST',
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-            }).then(response => {
-                if (response.ok) {
-                    form.reset(); // Reset the form fields
-                    openModal(); // Show the thank-you message
-                } else {
-                    alert("There was an issue submitting your form. Please try again.");
-                }
-            }).catch(error => {
-                console.error("Error submitting the form:", error);
-                alert("There was an error. Please try again later.");
-            });
-        });
-
-        function openModal() {
-            modal.style.display = 'block';
-            overlay.style.display = 'block';
-        }
-
-        function closeModal() {
-            modal.style.display = 'none';
-            overlay.style.display = 'none';
-        }
-    </script>
-
-
-    <!-- Footer -->
     <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2024 Fatima Sabiu Maikore. Built with GitHub Pages.</p>
+        <div class="container footer-shell">
+            <p>&copy; <span id="year"></span> Fatima Sabiu Maikore. Built for GitHub Pages.</p>
+            <div class="footer-links">
+                <a href="#top">Back to top</a>
+                <a href="projects">Projects</a>
+                <a href="cv-llt.pdf" target="_blank" rel="noopener">CV</a>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <a href="#" id="back_to_top">
-        <i class="fa fa-arrow-up"></i>
-    </a>
     <script>
-        // Show the "Back to Top" button when scrolling down
-        window.addEventListener("scroll", function () {
-            const backToTop = document.getElementById("back_to_top");
-            if (window.scrollY > 200) {
-                backToTop.style.display = "block";
-            } else {
-                backToTop.style.display = "none";
-            }
-        });
-    
-        // Smooth scroll to the top when clicking the button
-        document.getElementById("back_to_top").addEventListener("click", function (e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.getElementById("site-nav");
+        const navItems = navLinks ? navLinks.querySelectorAll("a") : [];
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener("click", () => {
+                const isOpen = navLinks.classList.toggle("open");
+                navToggle.setAttribute("aria-expanded", String(isOpen));
             });
-        });
+
+            navItems.forEach((item) => {
+                item.addEventListener("click", () => {
+                    navLinks.classList.remove("open");
+                    navToggle.setAttribute("aria-expanded", "false");
+                });
+            });
+        }
+
+        const form = document.getElementById("contact-form");
+        const formStatus = document.getElementById("form-status");
+
+        if (form && formStatus) {
+            form.addEventListener("submit", async (event) => {
+                event.preventDefault();
+                formStatus.textContent = "Sending message...";
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: "POST",
+                        body: new FormData(form),
+                        headers: { "Accept": "application/json" }
+                    });
+
+                    if (!response.ok) {
+                        throw new Error("Form submission failed");
+                    }
+
+                    form.reset();
+                    formStatus.textContent = "Thank you. Your message has been sent.";
+                } catch (error) {
+                    console.error("Contact form error:", error);
+                    formStatus.textContent = "There was a problem sending your message. Please try again.";
+                }
+            });
+        }
+
+        const year = document.getElementById("year");
+        if (year) {
+            year.textContent = String(new Date().getFullYear());
+        }
     </script>
-    
 </body>
 </html>
